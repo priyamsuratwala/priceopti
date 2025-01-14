@@ -1,0 +1,12 @@
+<div class="price-container">
+    <div class="current-price">
+      <label for="currentPrice">Current Price:</label>
+      <input type="number" id="currentPrice" [(ngModel)]="currentPrice" placeholder="Enter current price">
+    </div>
+    <div class="predicted-price">
+      <button (click)="predictPrice()">Predict Price</button>
+      <input type="number" [value]="predictedPrice || ''" readonly placeholder="Predicted price">
+      <h1 class="dollar-sign">$</h1>
+    </div>
+    
+  </div>

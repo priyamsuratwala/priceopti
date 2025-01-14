@@ -1,0 +1,73 @@
+.product-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #d4d4d4;
+  
+    min-width: 50vw;
+    padding-left: 80px;
+  }
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+  .pName {
+    display: flex;
+    flex-direction: column;
+
+    
+  }
+  
+  .pCategory {
+    display: flex;
+    flex-direction: column;
+
+
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  input[type="text"], select {
+    padding: 10px;
+    border: 1px solid #ECECEC;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+    width: 20rem;
+  }
+  
+  input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #000;
+  }
+  
+  select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+  }
+
+  .lottie-container {
+    width: 600px;
+    height: 600px;
+    margin-top: 20px;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .product-container {
+      flex-direction: column;
+      min-height: 50vh;
+    }
+
+  }

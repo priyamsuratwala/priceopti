@@ -1,0 +1,73 @@
+.price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #d4d4d4;
+    min-height: 40vh;
+  }
+
+  
+  .current-price, .predicted-price {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ECECEC;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+  }
+
+  .dollar-sign{
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    margin-left: 8px;
+    background-color: #ffffff;
+    font-size: 1.5rem;
+  }
+  
+  input[type="number"]:focus {
+    outline: none;
+    border-color: #333;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1e7a1e;
+  }
+  
+  .predicted-price input[type="number"] {
+    background-color: #ffffff;
+  }
+  
+  @media (max-width: 600px) {
+    .price-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .current-price, .predicted-price {
+      margin-bottom: 15px;
+    }
+  }
